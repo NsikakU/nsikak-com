@@ -14,7 +14,7 @@ export const Contact = () => {
           className="max-w-3xl mx-auto"
         >
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl md:text-4xl font-bold text-nsikak-primary mb-6 text-center">Let's Collaborate</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#9b87f5] mb-6 text-center">Let's Collaborate</h2>
             <p className="text-lg text-gray-600 mb-8 text-center">
               Looking forward to connecting with fellow innovators and changemakers. Whether you're interested in my ventures, 
               want to discuss potential collaborations, or just want to chat about technology and social impact, I'd love to hear from you.
@@ -25,7 +25,7 @@ export const Contact = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-6 bg-gray-50 rounded-lg text-center"
               >
-                <Mail className="w-8 h-8 mx-auto mb-4 text-nsikak-secondary" />
+                <Mail className="w-8 h-8 mx-auto mb-4 text-[#9b87f5]" />
                 <h3 className="font-semibold mb-2">Email Me</h3>
                 <p className="text-sm text-gray-600">For formal inquiries and proposals</p>
               </motion.div>
@@ -34,7 +34,7 @@ export const Contact = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-6 bg-gray-50 rounded-lg text-center"
               >
-                <MessageSquare className="w-8 h-8 mx-auto mb-4 text-nsikak-secondary" />
+                <MessageSquare className="w-8 h-8 mx-auto mb-4 text-[#9b87f5]" />
                 <h3 className="font-semibold mb-2">Schedule a Call</h3>
                 <p className="text-sm text-gray-600">Let's discuss your ideas in detail</p>
               </motion.div>
@@ -43,7 +43,7 @@ export const Contact = () => {
                 whileHover={{ scale: 1.05 }}
                 className="p-6 bg-gray-50 rounded-lg text-center"
               >
-                <Coffee className="w-8 h-8 mx-auto mb-4 text-nsikak-secondary" />
+                <Coffee className="w-8 h-8 mx-auto mb-4 text-[#9b87f5]" />
                 <h3 className="font-semibold mb-2">Coffee Chat</h3>
                 <p className="text-sm text-gray-600">Casual conversations about tech & impact</p>
               </motion.div>
@@ -53,7 +53,7 @@ export const Contact = () => {
               <Button
                 variant="default"
                 size="lg"
-                className="w-full md:w-auto"
+                className="w-full md:w-auto bg-gradient-to-r from-[#9b87f5] to-[#63B3ED] hover:opacity-90"
                 onClick={() => window.location.href = "mailto:contact@nsikak.com"}
               >
                 <Mail className="mr-2 h-4 w-4" /> Send an Email
@@ -62,7 +62,7 @@ export const Contact = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="w-full md:w-auto"
+                className="w-full md:w-auto border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5] hover:text-white"
               >
                 <MessageSquare className="mr-2 h-4 w-4" /> Schedule a Meeting
               </Button>
