@@ -3,29 +3,29 @@ import { motion } from "framer-motion";
 export const About = () => {
   const journeySteps = [
     {
-      title: "Healthcare Roots",
-      description: "Started as a pharmacy technician, discovering the potential of technology in healthcare",
+      title: "Healthcare Insights",
+      description: "Started in healthcare, experiencing firsthand the need for accessible technology solutions in essential services",
       icon: "🏥"
     },
     {
       title: "Tech Evolution",
-      description: "Transitioned to software engineering, working with democratic campaigns and social impact solutions",
+      description: "Transformed into a tech enabler, focusing on democratizing technology for democratic campaigns and social impact organizations",
       icon: "💻"
     },
     {
-      title: "Entrepreneurial Growth",
-      description: "Founded SPARKNERDS and created ImpactFlow to empower nonprofits through technology",
+      title: "Empowerment Focus",
+      description: "Founded SPARKNERDS to bridge the tech gap, creating tools that enable organizations to move faster independently",
       icon: "🚀"
     },
     {
-      title: "Community Building",
-      description: "Established Turtleback Coworking, creating spaces for entrepreneurs to thrive",
+      title: "Community Impact",
+      description: "Built Turtleback Coworking, fostering a space where grassroots innovation meets practical implementation",
       icon: "🏢"
     }
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-gradient-to-b from-white via-[#F2FCE2]/20 to-white">
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,11 +34,11 @@ export const About = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-nsikak-primary mb-8 text-center">My Journey</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#9b87f5] mb-8 text-center">Bridging The Tech Gap</h2>
           
           <div className="space-y-8">
             <p className="text-lg text-gray-600 text-center leading-relaxed max-w-3xl mx-auto">
-              Starting as a pharmacy technician, I discovered my passion for technology and its potential to create meaningful change in communities.
+              My journey from healthcare to tech has given me a unique perspective on both sides of the technology gap - understanding the challenges organizations face and knowing how to solve them effectively.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -49,12 +49,12 @@ export const About = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border border-[#9b87f5]/10"
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-3xl">{step.icon}</span>
                     <div>
-                      <h3 className="text-xl font-semibold text-nsikak-primary mb-2">{step.title}</h3>
+                      <h3 className="text-xl font-semibold text-[#9b87f5] mb-2">{step.title}</h3>
                       <p className="text-gray-600">{step.description}</p>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ export const About = () => {
               className="mt-12 text-center"
             >
               <blockquote className="text-xl italic text-gray-600 max-w-3xl mx-auto">
-                "These experiences weren't just stepping stones - they shaped my understanding of technology, user needs, and community impact."
+                "My mission is to empower organizations with practical tech solutions that enable self-sufficiency and faster growth. It's not just about solving problems - it's about enabling others to solve their own."
               </blockquote>
             </motion.div>
           </div>

@@ -10,7 +10,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white via-blue-50 to-gray-50 px-4 py-16 md:py-0">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#F2FCE2] via-white to-gray-50 px-4 py-16 md:py-0">
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col items-center justify-center space-y-8">
           <motion.div 
@@ -19,7 +19,7 @@ export const Hero = () => {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-20 rounded-full blur-xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#9b87f5] to-[#63B3ED] opacity-20 rounded-full blur-xl"></div>
             <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden">
               <img 
                 src="/lovable-uploads/6a254c4f-fffc-4db8-b978-bdc2dc79ba05.png"
@@ -45,11 +45,11 @@ export const Hero = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="space-y-4"
             >
-              <p className="text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium">
-                Tech Entrepreneur & Social Impact Innovator
-              </p>
+              <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 font-medium">
+                The Grassroots Tech Enabler
+              </h2>
               <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-                From healthcare to tech, building solutions that create meaningful change in communities
+                Bridging the gap between big tech capabilities and small organization needs, empowering communities through practical, accessible solutions
               </p>
             </motion.div>
             
@@ -62,13 +62,13 @@ export const Hero = () => {
               <a 
                 href="#about" 
                 onClick={(e) => scrollToSection(e, 'about')}
-                className="bg-gradient-to-r from-nsikak-primary to-nsikak-secondary text-white px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl text-lg w-full sm:w-auto"
+                className="bg-gradient-to-r from-[#9b87f5] to-[#63B3ED] text-white px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl text-lg w-full sm:w-auto"
               >
                 See My Journey
               </a>
               <a 
                 href="#contact" 
-                className="border-2 border-nsikak-primary text-nsikak-primary px-8 py-3 rounded-lg hover:bg-nsikak-primary hover:text-white transition-colors duration-300 shadow-sm hover:shadow-md text-lg w-full sm:w-auto"
+                className="border-2 border-[#9b87f5] text-[#9b87f5] px-8 py-3 rounded-lg hover:bg-[#9b87f5] hover:text-white transition-colors duration-300 shadow-sm hover:shadow-md text-lg w-full sm:w-auto"
               >
                 Let's Collaborate
               </a>
