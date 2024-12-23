@@ -6,13 +6,13 @@ import { Contact } from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="bg-white">
+    <main className="bg-white">
       <Navigation />
       <Hero />
       <About />
       <Ventures />
       <Contact />
-    </div>
+    </main>
   );
 };
 
