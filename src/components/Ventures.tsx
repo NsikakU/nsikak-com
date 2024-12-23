@@ -62,7 +62,7 @@ export const Ventures = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
