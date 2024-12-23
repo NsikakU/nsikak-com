@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 export const LogoSection = () => {
   const logos = [
     {
-      src: "/lovable-uploads/181d61e3-5ea1-4ad3-9f43-d0b372d65efc.png",
-      alt: "Partner Logo 1",
-      width: "120px"
+      src: "/lovable-uploads/d137b011-aff2-41b8-9c6c-7ca90f5089b2.png",
+      alt: "Kopser for Congress Logo",
+      width: "200px"
     },
     {
-      src: "/lovable-uploads/181d61e3-5ea1-4ad3-9f43-d0b372d65efc.png",
-      alt: "Partner Logo 2",
-      width: "120px"
+      src: "/lovable-uploads/d773a8e2-ba2d-4360-a0ae-2cab964a55ca.png",
+      alt: "CHISPA Logo",
+      width: "240px"
     },
     {
-      src: "/lovable-uploads/181d61e3-5ea1-4ad3-9f43-d0b372d65efc.png",
-      alt: "Partner Logo 3",
-      width: "120px"
+      src: "/lovable-uploads/b26885b4-d0e2-46a6-bd17-0fc1c42926c9.png",
+      alt: "Alliance for Electric School Buses Logo",
+      width: "200px"
     },
     {
-      src: "/lovable-uploads/181d61e3-5ea1-4ad3-9f43-d0b372d65efc.png",
-      alt: "Partner Logo 4",
-      width: "120px"
+      src: "/lovable-uploads/8efdbac5-c5ed-44ae-b138-49a6537f754c.png",
+      alt: "Maya Consulting Logo",
+      width: "160px"
     }
   ];
 
@@ -51,7 +51,7 @@ export const LogoSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              className="w-32 h-32 flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="w-full h-32 flex items-center justify-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <img
                 src={logo.src}
