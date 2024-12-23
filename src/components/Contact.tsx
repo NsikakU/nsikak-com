@@ -3,6 +3,10 @@ import { Mail, MessageSquare, Coffee } from "lucide-react";
 import { Button } from "./ui/button";
 
 export const Contact = () => {
+  const handleScheduleMeeting = () => {
+    window.open("https://calendly.com/me-nsikak/30min", "_blank");
+  };
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container px-4 mx-auto">
@@ -63,6 +67,7 @@ export const Contact = () => {
                 variant="outline"
                 size="lg"
                 className="w-full md:w-auto border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5] hover:text-white"
+                onClick={handleScheduleMeeting}
               >
                 <MessageSquare className="mr-2 h-4 w-4" /> Schedule a Meeting
               </Button>
