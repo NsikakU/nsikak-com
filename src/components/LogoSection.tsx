@@ -21,6 +21,11 @@ export const LogoSection = () => {
       src: "/lovable-uploads/8efdbac5-c5ed-44ae-b138-49a6537f754c.png",
       alt: "Maya Consulting Logo",
       width: "160px"
+    },
+    {
+      src: "/lovable-uploads/e22cbf7d-9f93-4daf-9e1e-815bf6ad247c.png",
+      alt: "DigiDems Logo",
+      width: "180px"
     }
   ];
 
@@ -43,7 +48,7 @@ export const LogoSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center"
         >
           {logos.map((logo, index) => (
             <motion.div
