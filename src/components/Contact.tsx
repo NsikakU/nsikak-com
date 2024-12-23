@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Mail, MessageSquare, Coffee } from "lucide-react";
+import { Button } from "./ui/button";
 
 export const Contact = () => {
   return (
@@ -9,20 +11,61 @@ export const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="max-w-xl mx-auto"
+          className="max-w-3xl mx-auto"
         >
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-            <h2 className="text-3xl md:text-4xl font-bold text-nsikak-primary mb-6 text-center">Get in Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-nsikak-primary mb-6 text-center">Let's Collaborate</h2>
             <p className="text-lg text-gray-600 mb-8 text-center">
-              Interested in working together? Let's connect.
+              Looking forward to connecting with fellow innovators and changemakers. Whether you're interested in my ventures, 
+              want to discuss potential collaborations, or just want to chat about technology and social impact, I'd love to hear from you.
             </p>
-            <div className="text-center">
-              <a
-                href="mailto:contact@nsikak.com"
-                className="inline-block bg-nsikak-primary text-white px-8 py-3 rounded-lg hover:bg-nsikak-secondary transition-colors duration-300 shadow-sm hover:shadow-md"
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="p-6 bg-gray-50 rounded-lg text-center"
               >
-                Send me an email
-              </a>
+                <Mail className="w-8 h-8 mx-auto mb-4 text-nsikak-secondary" />
+                <h3 className="font-semibold mb-2">Email Me</h3>
+                <p className="text-sm text-gray-600">For formal inquiries and proposals</p>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="p-6 bg-gray-50 rounded-lg text-center"
+              >
+                <MessageSquare className="w-8 h-8 mx-auto mb-4 text-nsikak-secondary" />
+                <h3 className="font-semibold mb-2">Schedule a Call</h3>
+                <p className="text-sm text-gray-600">Let's discuss your ideas in detail</p>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="p-6 bg-gray-50 rounded-lg text-center"
+              >
+                <Coffee className="w-8 h-8 mx-auto mb-4 text-nsikak-secondary" />
+                <h3 className="font-semibold mb-2">Coffee Chat</h3>
+                <p className="text-sm text-gray-600">Casual conversations about tech & impact</p>
+              </motion.div>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+              <Button
+                variant="default"
+                size="lg"
+                className="w-full md:w-auto"
+                onClick={() => window.location.href = "mailto:contact@nsikak.com"}
+              >
+                <Mail className="mr-2 h-4 w-4" /> Send an Email
+              </Button>
+              
+              <Button
+                variant="outline"
+                size="lg"
+                className="w-full md:w-auto"
+              >
+                <MessageSquare className="mr-2 h-4 w-4" /> Schedule a Meeting
+              </Button>
             </div>
           </div>
         </motion.div>

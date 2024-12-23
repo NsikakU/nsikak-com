@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Calendar, Gift, Clock, Sparkles } from "lucide-react";
 
 export const Ventures = () => {
   const ventures = [
@@ -6,13 +7,15 @@ export const Ventures = () => {
       title: "SPARKNERDS",
       description: "Digital agency partnering with nonprofits to develop impactful websites that connect with their audience.",
       category: "Digital Agency",
-      status: "Active"
+      status: "Active",
+      icon: <Sparkles className="w-6 h-6" />
     },
     {
       title: "ImpactFlow",
       description: "Streamlined website management subscription service for social impact organizations.",
       category: "SaaS",
-      status: "Active"
+      status: "Active",
+      icon: <Calendar className="w-6 h-6" />
     },
     {
       title: "Turtleback Coworking",
@@ -40,15 +43,17 @@ export const Ventures = () => {
     },
     {
       title: "YayPalm",
-      description: "Making ugly phone cases a distant memory through collaborations with independent artists worldwide.",
+      description: "Making ugly phone cases a distant memory through collaborations with independent artists worldwide. One of my first business ventures that helped understand market dynamics and user feedback importance.",
       category: "E-commerce",
-      status: "Past Venture (2016)"
+      status: "Past Venture (2016)",
+      icon: <Clock className="w-6 h-6" />
     },
     {
       title: "GiftSpout",
-      description: "Platform designed to make gifting hassle-free through personalized recommendations.",
+      description: "Platform for hassle-free gifting through personalized recommendations. An early experiment that taught valuable lessons about customer experience and digital marketplace operations.",
       category: "E-commerce",
-      status: "Past Venture"
+      status: "Past Venture",
+      icon: <Gift className="w-6 h-6" />
     }
   ];
 
@@ -63,7 +68,10 @@ export const Ventures = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-nsikak-primary mb-4">My Ventures</h2>
-          <p className="text-lg text-nsikak-text">Creating impact through innovation and technology - Past & Present</p>
+          <p className="text-lg text-nsikak-text mb-8">Creating impact through innovation and technology - Past & Present</p>
+          <blockquote className="italic text-gray-600 max-w-2xl mx-auto">
+            "These early ventures weren't just businesses - they were stepping stones that shaped my understanding of technology, user needs, and community impact."
+          </blockquote>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -83,10 +91,13 @@ export const Ventures = () => {
               }`}
             >
               <div className="p-6">
-                <div className="flex justify-between items-start mb-2">
-                  <span className="text-sm text-nsikak-secondary font-medium">
-                    {venture.category}
-                  </span>
+                <div className="flex justify-between items-start mb-4">
+                  <div className="flex items-center gap-3">
+                    {venture.icon}
+                    <span className="text-sm text-nsikak-secondary font-medium">
+                      {venture.category}
+                    </span>
+                  </div>
                   <span className={`text-xs px-2 py-1 rounded-full ${
                     venture.status.includes("Past") 
                       ? "bg-gray-100 text-gray-600"
