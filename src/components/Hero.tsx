@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
 export const Hero = () => {
-  const scrollToVentures = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
-    const venturesSection = document.getElementById('ventures');
-    if (venturesSection) {
-      venturesSection.scrollIntoView({ behavior: 'smooth' });
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -58,8 +58,8 @@ export const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
             >
               <a 
-                href="#ventures" 
-                onClick={scrollToVentures}
+                href="#about" 
+                onClick={(e) => scrollToSection(e, 'about')}
                 className="bg-gradient-to-r from-nsikak-primary to-nsikak-secondary text-white px-8 py-3 rounded-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl text-lg w-full sm:w-auto"
               >
                 See My Journey
