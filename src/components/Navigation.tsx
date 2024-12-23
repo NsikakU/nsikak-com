@@ -23,7 +23,7 @@ export const Navigation = () => {
     >
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
-          <a href="#" className="text-2xl font-bold text-nsikak-primary">
+          <a href="#" className="text-2xl font-bold text-nsikak-primary hover:text-nsikak-secondary transition-colors duration-300">
             Nsikak
           </a>
           <div className="hidden md:flex space-x-8">
@@ -31,7 +31,7 @@ export const Navigation = () => {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-nsikak-text hover:text-nsikak-secondary transition-colors duration-300"
+                className="text-gray-600 hover:text-nsikak-secondary transition-colors duration-300 font-medium"
               >
                 {item}
               </a>

@@ -26,7 +26,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl md:text-2xl text-nsikak-text mb-8"
+              className="text-xl md:text-2xl text-gray-600 mb-8"
             >
               Tech Entrepreneur & Social Impact Innovator
             </motion.p>
@@ -39,13 +39,13 @@ export const Hero = () => {
               <a 
                 href="#ventures" 
                 onClick={scrollToVentures}
-                className="bg-nsikak-primary text-white px-8 py-3 rounded-lg hover:bg-nsikak-secondary transition-colors duration-300 inline-block"
+                className="bg-nsikak-primary text-white px-8 py-3 rounded-lg hover:bg-nsikak-secondary transition-colors duration-300 inline-block shadow-sm hover:shadow-md"
               >
                 View My Work
               </a>
               <a 
                 href="#contact" 
-                className="border-2 border-nsikak-primary text-nsikak-primary px-8 py-3 rounded-lg hover:bg-nsikak-primary hover:text-white transition-colors duration-300 inline-block"
+                className="border-2 border-nsikak-primary text-nsikak-primary px-8 py-3 rounded-lg hover:bg-nsikak-primary hover:text-white transition-colors duration-300 inline-block shadow-sm hover:shadow-md"
               >
                 Get in Touch
               </a>
