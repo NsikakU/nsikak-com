@@ -27,7 +27,7 @@ export const Navigation = () => {
             Nsikak
           </a>
           <div className="hidden md:flex space-x-8">
-            {['About', 'Ventures', 'Contact'].map((item) => (
+            {['About', 'Services', 'Ventures', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
