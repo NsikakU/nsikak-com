@@ -58,7 +58,7 @@ export const Contact = () => {
                 variant="default"
                 size="lg"
                 className="w-full md:w-auto bg-gradient-to-r from-[#9b87f5] to-[#63B3ED] hover:opacity-90"
-                onClick={() => window.location.href = "mailto:contact@nsikak.com"}
+                onClick={() => window.location.href = "mailto:me@nsikak.com"}
               >
                 <Mail className="mr-2 h-4 w-4" /> Send an Email
               </Button>
