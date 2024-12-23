@@ -38,7 +38,7 @@ export const About = () => {
           
           <div className="space-y-8">
             <p className="text-lg text-gray-600 text-center leading-relaxed max-w-3xl mx-auto">
-              My journey from healthcare to tech has given me a unique perspective on both sides of the technology gap - understanding the challenges organizations face and knowing how to solve them effectively.
+              My journey from healthcare to tech has been marked by continuous transformation and growth, shaping my ability to bridge the technology gap—understanding organizational challenges and crafting effective solutions.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
