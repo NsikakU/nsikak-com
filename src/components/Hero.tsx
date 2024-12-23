@@ -20,11 +20,13 @@ export const Hero = () => {
             className="relative"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-20 rounded-full blur-xl"></div>
-            <img 
-              src="/lovable-uploads/181d61e3-5ea1-4ad3-9f43-d0b372d65efc.png"
-              alt="Nsikak Udoh"
-              className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-xl border-4 border-white"
-            />
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden">
+              <img 
+                src="/lovable-uploads/181d61e3-5ea1-4ad3-9f43-d0b372d65efc.png"
+                alt="Nsikak Udoh"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
           </motion.div>
           
           <div className="text-center space-y-6 max-w-3xl">
